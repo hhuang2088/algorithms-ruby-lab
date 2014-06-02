@@ -8,14 +8,21 @@ module MathExpert
   #iterative
   def self.calculate_factorial_iterative n
     #TODO: Implement factorial using a loop
-    n
+    i = 0
+    answer = 1
+    while i < n 
+      answer *= n - i
+      i += 1
+    end
+    answer
   end
 
   #recursive
-  def self.calculate_factorial_recursive n
-    #TODO: Implement factorial using recursion
-    n
+    def self.calculate_factorial_recursive n
+    if n > 1
+      n * calculate_factorial_recursive( n - 1 )
+    else
+      n
+    end
   end
-
-
 end

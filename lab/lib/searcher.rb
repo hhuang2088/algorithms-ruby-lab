@@ -36,8 +36,7 @@ module Searcher
 
     #TODO: Give it a go!
     #Plan out you algorithm
-
-    false
-  end
+    
+end
 
 end
